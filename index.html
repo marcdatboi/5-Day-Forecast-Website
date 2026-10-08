@@ -1,0 +1,192 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/css/current-weather.css">
+    <link rel="stylesheet" href="src/css/weather-highlights.css">
+    <link rel="stylesheet" href="src/css/todays-weather-container.css">
+    <link rel="stylesheet" href="src/css/today-weather-info.css">
+    <link rel="stylesheet" href="src/css/5-day-forecast.css">
+
+    <title>Weather App</title>
+  </head>
+
+  <body>
+
+    <div id="today-weather-info-container">
+      <!-- --- Current Weather Widget --- -->
+
+      <div id="current-weather-container">
+
+        <div id="date-location">
+          <h2 id="location">Seattle</h2>
+          <h3 id="day-of-the-week">Monday</h3>
+          <h2 id="date">2026 | Aug | 31</h2>
+        </div>
+      
+
+
+        <!-- --- Current Temperature --- -->
+        <div id="current-temperature-container">
+          
+          <div id="feels-like-temperature-container">
+
+            <h1 id="current-temperature">20ºC</h1>
+            <div class="text-straightener"><h3>Feels Like</h3> <p id="feel-like-temperature">18ºC</p></div>
+            <p id="current-weather">Windy</p>
+            
+          </div>
+
+          <div id="current-temperature-weather-icon-container"> <img id="current-weather-image" src="./src/assets/images/weather-icons/cloudy-icon.png" alt="Weather Icon Image"> </div>
+
+        </div>
+      </div>
+
+
+
+
+      
+      <!-- ---=== Weather Highlights & Sunset/Sunrise ===--- -->
+      <div id="weather-highlights-container"> <!-- Contains weather highlights & sunset/sunrise -->
+
+        <div id="weather-highlights-atmospheric-info"> <!-- Wind Speed, Humidity, UV Index, Visibility -->
+          
+
+          <!-- --- Wind Status & Humidity --- -->
+          <div id="weather-highlights-wind-humidity-container">
+
+            <div id="weather-highlights-wind-status" class="info-widget"> <!-- Wind Speed -->
+              <h3>Wind Status</h3>
+
+              <div class="text-straightener"><p id="current-wind-speed">7.90</p> <p>km/h</p></div>
+            </div>
+
+            
+            <div id="weather-highlights-humidity-status" class="info-widget"> <!-- Humidity -->
+
+              <h3>Humidity</h3>
+              <div class="text-straightener"><p id="current-humidity">85</p> <p>%</p></div>
+
+            </div>
+
+          </div> <!-- weather-highlights-wind-humidity-container -->
+          
+
+          <!-- --- High-Low temperatures & Visibility --- -->
+          <div id="weather-highlights-temperature-range-visibility-container">
+            <!-- why is status used in this id name?       vvvv  -->
+            <div id="weather-highlights-temperature-range-status" class="info-widget"> <!-- Temperature Range -->
+              <h3>Temperature<br>Range</h3>
+              <div class="text-straightener"><p>High: </p> <p id="current-low-temperature">10</p> <p>ºC</p></div>
+              <div class="text-straightener"><p>Low: </p><p id="current-high-temperature">20</p> <p>ºC</p></div>
+              
+            </div>
+
+            <div id="weather-highlights-visibility-status" class="info-widget"> <!-- Visibility -->
+              <h3>Visibility</h3>
+              <div class="text-straightener"><p id="current-visibility-km">10</p> <p>km</p></div>
+              
+            </div>
+
+          </div>
+
+        </div> <!-- weather-highlights-atmospheric-info -->
+
+
+
+        
+        
+        <!-- ---=== Sunset/Sunrise ===--- -->
+        <div id="weather-highlights-sunrise-sunset-container">
+          
+          <div id="weather-highlights-sunrise-container" class="daylight-container"> <!-- Sunrise -->
+
+            <div id="weather-highlights-sunrise-text-container">
+
+              <h3>Sunrise</h3>
+              <p id="sunrise-time">6:24am</p>
+
+            </div>
+            
+          </div>
+
+          <div id="weather-highlights-sunset-container" class="daylight-container"> <!-- Sunset -->
+
+            <div id="weather-highlights-sunset-text-container">
+              <h3>Sunset</h3>
+              <p id="sunset-time">6:53pm</p>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+      </div> <!-- weather-highlights-container -->
+
+    </div> <!-- today-weather-info-container -->
+
+
+
+
+
+    <!-- ---=== 5-day Forecast ===--- --> 
+    <div id="five-day-forecast-container">
+      <div id="day1-weather-container" class="forecast-container"> <!-- 1st day (today's weather) --> 
+        <h2 id="day1-name">Today</h2> <!-- itll always be today-->
+
+        <div class="forecast-weather-icon-container">
+          <img id="day1-image" src="src/assets/images/weather-icons/idfk-icon.png" alt="Weather Icon Image">
+        </div>
+        <div class="text-straightener"> <h2 id="day1-temperature">20</h2> </div>
+      </div> 
+
+      <div id="day2-weather-container" class="forecast-container"> <!-- 2nd day -->
+        <h2 id="day2-name">Tuesday</h2>
+
+        <div class="forecast-weather-icon-container">
+          <img id="day2-image" src="src/assets/images/weather-icons/very-rainy-icon.png" alt="Weather Icon Image">
+        </div>
+        <div class="text-straightener"> <h2 id="day2-temperature">20</h2> <h2>ºC</h2> </div>
+      </div> 
+
+      <div id="day3-weather-container" class="forecast-container"> <!-- 3rd day -->
+        <h2 id="day3-name">Wednesday</h2>
+
+        <div class="forecast-weather-icon-container">
+          <img id="day3-image" src="src/assets/images/weather-icons/very-rainy-icon.png" alt="Weather Icon Image">
+        </div>
+        <div class="text-straightener"> <h2 id="day3-temperature">20</h2> <h2>ºC</h2> </div>
+      </div> 
+
+      <div id="day4-weather-container" class="forecast-container"> <!-- 4th day -->
+        <h2 id="day4-name">Thursday</h2>
+
+        <div class="forecast-weather-icon-container">
+          <img id="day4-image" src="src/assets/images/weather-icons/very-rainy-icon.png" alt="Weather Icon Image">
+        </div>
+        <div class="text-straightener"> <h2 id="day4-temperature">20</h2> <h2>ºC</h2> </div>
+      </div> 
+
+      <div id="day5-weather-container" class="forecast-container"> <!-- 5th day -->
+        <h2 id="day5-name">Friday</h2>
+
+        <div class="forecast-weather-icon-container">
+          <img id="day5-image" src="src/assets/images/weather-icons/very-rainy-icon.png" alt="Weather Icon Image">
+        </div>
+        <div class="text-straightener"> <h2 id="day5-temperature">20</h2> <h2>ºC</h2> </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+
+</html>

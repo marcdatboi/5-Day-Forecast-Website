@@ -1,0 +1,51 @@
+
+
+
+
+/* Font */
+@font-face {
+    font-family: 'default-font';
+    src: url('./assets/fonts/default-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Root */
+:root {
+    --body-height: 1000px;
+    --universal-text-color: #FFFFFF;
+    --light-color: #171717;
+    --dark-color: #0d0d0d;
+    --lighter-color: #242424;
+    --default-font: 'default-font', serif;
+}
+
+
+/* --- Body --- */
+body {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #232023;
+    height: var(--body-height);
+    padding: 50px;
+    gap: 10px;
+
+    /* Debug */
+    /* border: 2px solid red; */
+
+}
+
+body * {
+    color: var(--universal-text-color);
+    font-family: var(--default-font), serif;
+    box-sizing: border-box;
+
+    /* Debug */
+    /* border: 2px solid red; */
+}
+
+body :is(h3) {
+    font-size: 16px;
+}

@@ -1,0 +1,11 @@
+
+
+
+
+#today-weather-info-container {
+    display: flex;
+    gap: 15px;
+
+    /* Debug */
+    /* border: 2px solid orange; */
+}
