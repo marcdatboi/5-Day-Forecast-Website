@@ -1,5 +1,5 @@
 
-# Project Name - Overview
+# 5-Day-Forecasting - Overview
 
 <h1>Project Overview</h1>
 This project is a 5-day forecasting website using OpenWeatherMap and Typescript. It is designed as a project for fun to test using api keys n stuff.
